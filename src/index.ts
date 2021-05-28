@@ -1,1 +1,1 @@
-export * from "./functions/currencies/getSymbol"
+export * from "./functions/index"
