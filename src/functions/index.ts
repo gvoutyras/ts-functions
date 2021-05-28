@@ -1,4 +1,4 @@
-import { getCurrencyList } from './../currencies/getCurrencyList';
+import { getCurrencyList } from './currencies/getCurrencyList';
 import {getSymbol}  from './currencies/getSymbol';
 export class __TSFunction__{
     connection: any;
@@ -12,6 +12,6 @@ export class __TSFunction__{
     }
 
     getCurrencyList(connection) {
-        return getCurrencyList(connection);
+        return new getCurrencyList(connection);
     }
 }
