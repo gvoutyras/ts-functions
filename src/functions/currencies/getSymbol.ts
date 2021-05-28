@@ -1,5 +1,5 @@
 export class getSymbol {
-    public getSymbol(curCode: String) {
+    constructor(curCode: String) {
         switch (curCode) {
             case "AUD" || "CAD" || "MXN" || "USD" || "ARS":
                 return "$";
