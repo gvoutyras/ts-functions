@@ -2,11 +2,7 @@
   "name": "travelsoft-functions",
   "version": "1.0.4",
   "description": "",
-  "main": "src/index.js",
-  "types": "index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

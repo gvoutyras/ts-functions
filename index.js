@@ -1,1 +1,3 @@
-export * as getCurrencySymbol from "./src/currency_rates/getSymbol";
+const getCurrSymbol = require("./src/currency/getSymbol");
+
+module.exports = getCurrSymbol;
