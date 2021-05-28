@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",
-  "files": [
-    "/dist"
+  "files": ["/"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
