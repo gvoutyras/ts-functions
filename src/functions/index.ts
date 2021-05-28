@@ -1,5 +1,6 @@
+import { getCurrencyList } from './../currencies/getCurrencyList';
 import {getSymbol}  from './currencies/getSymbol';
-export class __TSFunction{
+export class __TSFunction__{
     connection: any;
 
     constructor(SQLConnection: any) {
@@ -8,5 +9,9 @@ export class __TSFunction{
 
     getSymbol(currency: string) {
         return new getSymbol(currency);
+    }
+
+    getCurrencyList(connection) {
+        return getCurrencyList(connection);
     }
 }
