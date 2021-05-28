@@ -1,6 +1,6 @@
 function getSymbol(curCode: String) {
     switch (curCode) {
-        case "AUD": case "CAD": case "MXN": case "USD": case "ARS":
+        case "AUD"|| "CAD"|| "MXN"|| "USD"|| "ARS":
 				return "$";
 			case "BGN":
 				return "лв";

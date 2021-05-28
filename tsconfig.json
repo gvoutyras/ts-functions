@@ -4,7 +4,8 @@
       "sourceMap": true,
       "module": "ES6",
       "target": "ES6",
-      "baseUrl": "./src/"
+      "baseUrl": "./src/",
+      "declaration": true
   },
   "include": [
       "./src/**/*"
