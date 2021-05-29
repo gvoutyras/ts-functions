@@ -2,9 +2,16 @@ import { Connection } from "tedious";
 import * as tu from "travelsoft-util";
 
 export class getCurrencyList{
-    constructor(sqlConn: any) {
+  /**
+   * 
+   * @param sqlConn AN SQL Connection object
+   * @param currCode optional - A currency code
+   * @returns An array with all currencies
+   */
+    constructor(sqlConn: any, currCode: string) {
         let qb = new tu.queryBuilder("currency_hnd");
         qb.addParameter("action", "VARCHAR", "L");
+        if(currCode) qb.addParameter("action", "VARCHAR", currCode);
 
         let q = { sql: qb.getQuery() };
 

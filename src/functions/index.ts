@@ -1,6 +1,6 @@
 import { getCurrencyList } from './currencies/getCurrencyList';
-import {getSymbol}  from './currencies/getSymbol';
-export class __TSFunction__{
+import { getSymbol } from './currencies/getSymbol';
+export class Currencies {
     connection: any;
 
     constructor(SQLConnection: any) {
@@ -11,7 +11,26 @@ export class __TSFunction__{
         return new getSymbol(currency);
     }
 
-    getCurrencyList(connection) {
-        return new getCurrencyList(connection);
+    getCurrencyList(currCode: string) {
+        return new getCurrencyList(this.connection, currCode);
     }
+}
+
+export class ItourAPI {
+    connection: any;
+
+    constructor(SQLConnection: any) {
+        this.connection = SQLConnection;
+    }
+
+}
+
+export class Passenger {
+    connection: any;
+
+    constructor(SQLConnection: any) {
+        this.connection = SQLConnection;
+    }
+
+
 }
